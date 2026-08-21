@@ -224,11 +224,6 @@ runs:
               }
 
               try {
-              # VALIDATION ONLY: Remove after capturing evidence.
-              if ($retryCount -eq 0) {
-                throw "Injected first-attempt failure for Issue #4209 E2E validation"
-                  }
-                  
                 switch ($deploymentType) {
                   "managementGroup" {
                     # Clean up all deployments before each deployment to avoid quota issues
